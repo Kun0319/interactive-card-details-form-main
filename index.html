@@ -65,6 +65,7 @@
       <img src="./images/bg-main-desktop.png" alt="" id="background" class="d-none d-md-inline-block ">
       <img src="./images/bg-main-mobile.png" alt="" id="" class="d-md-none d-inline-block">
       <div>
+        <!-- 兩張卡片位置在筆電位置怪怪的 -->
         <!-- <img src="./images/bg-card-front.png" alt="" id="card"> -->
       </div>
       <div>
@@ -74,23 +75,26 @@
 
     <div class="  d-flex justify-content-center  align-items-center w-100">
       <form action="" class="">
-        <p>CARDHOLDER NAME</p>
-        <input type="text" name="" id="" class="col-12" placeholder="e.g. Jane Appleseed">
-        <p>CARD NUMBER</p>
-        <input type="number" name="" id="" class="col-12" placeholder="  e.g. 1234 5678 9123 0000">
+        <p class="m-0">CARDHOLDER NAME</p>
+        <input type="text" name="" id="cardname" class="col-12" placeholder="e.g. Jane Appleseed">
+        <p class="m-0">CARD NUMBER</p>
+        <input type="number" name="" id="cardnumber" class="col-12" placeholder="  e.g. 1234 5678 9123 0000">
         <div class="d-flex ">
-          <p class="col-6 mb-1">EXP.DATE(MM/YY)</p>
-          <p class="col-6 mb-1">CVC</p>
+          <!-- 這兩個p標籤要再看位置 -->
+          <p class="col-4 mb-1">EXP.DATE(MM/YY)</p>
+          <p class="col-3 mb-1">CVC</p>
         </div>
+        <!-- 要再調整input輸入框大小 -->
         <div class="d-flex">
-          <input type="number" name="" id="" class="col-3" placeholder="MM">
-          <input type="number" name="" id="" class="col-3" placeholder="YY">
-          <input type="number" name="" id="" class="col-6" placeholder="e.g. 123">
+          <input type="number" name="" id="mm" class="col-3 me-2" placeholder="MM">
+          <input type="number" name="" id="yy" class="col-3 me-3" placeholder="YY">
+          <input type="number" name="" id="cvc" class="col-6" placeholder="e.g. 123">
         </div>
         <button class="col-12 mt-5">Condfirm</button>
       </form>
     </div>
   </div>
+
 
 
 

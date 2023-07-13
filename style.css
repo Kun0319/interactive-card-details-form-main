@@ -26,3 +26,12 @@ input {
     height: 3em;
     border-radius: 5px;
 }
+#cardname,#cardnumber{
+    width: 30vw;
+}
+#mm,#yy{
+    width: 15%;
+}
+#cvc{
+    width: 30%;
+}
