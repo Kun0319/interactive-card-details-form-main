@@ -19,3 +19,9 @@ button {
     background-color: #3F0063;
     border-radius: 0.5rem;
 }
+
+input {
+
+    height: 3em;
+    border-radius: 5px;
+}
