@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
 
 }
 
@@ -24,29 +25,42 @@ button {
     color: white;
     background-color: #3F0063;
     border-radius: 0.5rem;
+
 }
 
 input {
-
+    border: 1px solid black;
     height: 3em;
     border-radius: 5px;
 }
 
 #cardname,
 #cardnumber {
-    width: 30vw;
+    width: 25rem;
 }
 
 #mm,
 #yy {
-    width: 15%;
+    width: 5rem;
 }
 
 #cvc {
-    width: 30%;
+    width: 12.5rem;
 }
 
 #confirm {
-    width: 30vw;
-    height:3rem;
+    width: 25rem;
+    height: 3rem;
+}
+
+#card1m {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+#card2m {
+    position: absolute;
+    top: 55%;
+    left: 15%;
 }

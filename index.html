@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <script src="./form.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -22,7 +24,7 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
@@ -60,34 +62,41 @@
   </div> -->
 
 
-  <div class="d-flex ">
-    <div class=" position-relative ">
-      <img src="./images/bg-main-desktop.png" alt="" id="background" class="d-none d-md-inline-block ">
-      <img src="./images/bg-main-mobile.png" alt="" id="" class="d-md-none d-inline-block">
+  <div class="flex-sm-row d-sm-flex   ">
+    <div class=" position-relative d-none d-sm-flex">
+      <img src="./images/bg-main-desktop.png" alt="" id="background" class=" ">
       <!-- 兩張卡片位置在筆電位置怪怪的 -->
-      <img src="./images/bg-card-front.png" class="" id="card">
+      <div>
+        <img src="./images/bg-card-front.png" class="" id="card">
+        <img src="./images/bg-card-back.png" alt="" class="position-absolute top-50 start-50" id="card2">
+      </div>
+    </div>
+    <!-- 手機顯示 -->
 
-
-      <img src="./images/bg-card-back.png" alt="" class="position-absolute top-50 start-50" id="card2">
-
+    <div class="d-flex d-sm-none col-12 position-relative mb-5">
+      <img src="./images/bg-main-mobile.png" alt="" id="" class="w-100">
+      <img src="./images/bg-card-back.png" class="h-50  " id="card1m">
+      <img src="./images/bg-card-front.png" class="h-50" id="card2m">
     </div>
 
-    <div class="  d-flex justify-content-center  align-items-center w-100">
+
+
+    <div class=" d-flex justify-content-center  align-items-center w-100 col-12 col-sm">
       <form action="" class="">
         <p class="m-0">CARDHOLDER NAME</p>
         <input type="text" name="" id="cardname" class="col-12" placeholder="e.g. Jane Appleseed">
         <p class="m-0">CARD NUMBER</p>
-        <input type="number" name="" id="cardnumber" class="col-12" placeholder="  e.g. 1234 5678 9123 0000">
-        <div class="d-flex ">
-          <!-- 這兩個p標籤要再看位置 -->
-          <p class="col-4 mb-1">EXP.DATE(MM/YY)</p>
-          <p class="col-3 mb-1">CVC</p>
+        <input type="number" name="" id="cardnumber" class="col-12" placeholder="  e.g. 1234 5678 9123 0000"
+          oninput="must4()">
+        <div class="d-flex  ">
+          <p class=" col-6 mb-1">EXP.DATE(MM/YY)</p>
+          <p class=" col mb-1">cvc</p>
         </div>
         <!-- 要再調整input輸入框大小 -->
-        <div class="d-flex">
+        <div class="d-flex ">
           <input type="number" name="" id="mm" class="col-3 me-2" placeholder="MM">
-          <input type="number" name="" id="yy" class="col-3 me-3" placeholder="YY">
-          <input type="number" name="" id="cvc" class="col-6" placeholder="e.g. 123">
+          <input type="number" name="" id="yy" class="col-3 me-4" placeholder="YY">
+          <input type="number" name="" id="cvc" class="col-4 ms-2" placeholder="e.g. 123">
         </div>
         <button class="col-12 mt-4 " id="confirm">Condfirm</button>
       </form>
